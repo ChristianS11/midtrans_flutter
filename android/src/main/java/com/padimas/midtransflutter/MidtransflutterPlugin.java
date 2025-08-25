@@ -21,7 +21,7 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
+// import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -47,12 +47,12 @@ public class MidtransflutterPlugin implements FlutterPlugin, MethodCallHandler {
 
   }
 
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "midtransflutter");
+  public static void registerWith(FlutterPluginBinding binding) {
+    final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "midtransflutter");
     channel.setMethodCallHandler(new MidtransflutterPlugin());
     MidtransflutterPlugin plugin = new MidtransflutterPlugin();
     channel.setMethodCallHandler(plugin);
-    plugin.context = registrar.context();
+    plugin.context = binding.getApplicationContext();
   }
 
   @Override
@@ -93,7 +93,7 @@ public class MidtransflutterPlugin implements FlutterPlugin, MethodCallHandler {
             .setContext(this.context)
             .setClientKey(clientKey)
             .setMerchantBaseUrl(merchantBaseUrl)
-            .enableLog(BuildConfig.DEBUG)
+            // .enableLog(BuildConfig.DEBUG)
             .buildSDK();
 
     this.result.success("");
