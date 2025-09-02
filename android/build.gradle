@@ -18,7 +18,7 @@ rootProject.allprojects {
         jcenter()
         mavenCentral()
         // Add the midtrans repository into the list of repositories
-        maven { url "https://jitpack.io" }
+        // maven { url "https://jitpack.io" }
     }
 }
 
@@ -39,6 +39,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    debugImplementation 'com.midtrans:uikit:2.3.0-SANDBOX'
-    releaseImplementation 'com.midtrans:uikit:2.3.0'
+    // debugImplementation 'com.midtrans:uikit:2.3.0-SANDBOX'
+    // releaseImplementation 'com.midtrans:uikit:2.3.0'
 }
