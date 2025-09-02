@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_quitter:
+  veritrans_android:
     git:
       url: https://github.com/ChristianS11/veritrans-android.git
       ref: master
