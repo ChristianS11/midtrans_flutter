@@ -11,11 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  veritrans_android:
-    git:
-      url: https://github.com/ChristianS11/veritrans-android.git
-      ref: master
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

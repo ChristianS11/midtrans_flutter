@@ -36,9 +36,10 @@ android {
     }
 }
 dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    // debugImplementation 'com.midtrans:uikit:2.3.0-SANDBOX'
-    // releaseImplementation 'com.midtrans:uikit:2.3.0'
+    debugImplementation 'com.midtrans:uikit:1.34.0-SANDBOX'
+    releaseImplementation 'com.midtrans:uikit:1.34.0'
 }
