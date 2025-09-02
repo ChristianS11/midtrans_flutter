@@ -18,7 +18,7 @@ rootProject.allprojects {
         jcenter()
         mavenCentral()
         // Add the midtrans repository into the list of repositories
-        // maven { url "https://jitpack.io" }
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -28,6 +28,8 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
+        namespace "com.needmobil.app"
+
         minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
