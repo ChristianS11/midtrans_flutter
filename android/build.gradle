@@ -28,7 +28,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        namespace "com.needmobil.app"
+        namespace "com.nemob.midtransFlutter"
 
         minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
